@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/crunchies_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_column1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_8e8e8e"
+            android:text="股票"
+            />
+
+        <TextView
+            android:id="@+id/tv_column2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_8e8e8e"
+            android:text="最新价"
+            />
+
+        <TextView
+            android:id="@+id/tv_column3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_10"
+            android:textColor="@color/cl_8e8e8e"
+            android:text="涨跌幅"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6">
+    </View>
+</LinearLayout>

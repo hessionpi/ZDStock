@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_zixuan_popup"
+    android:layout_width="110dp"
+    android:layout_height="35dp"
+    android:background="@drawable/zixuan_popup_bg_shang">
+
+    <TextView
+        android:id="@+id/delete_stocck"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_13" />
+
+    <TextView
+        android:id="@+id/stick_stocck"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="置顶"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_13" />
+</LinearLayout>

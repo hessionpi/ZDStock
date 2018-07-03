@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/public_corners_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        tools:text="@string/delete_zixuan_warning"
+        android:textSize="@dimen/font_size_17"
+        android:textColor="@color/cl_333333"
+         />
+
+    <View
+        android:background="@color/cl_e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:gravity="center"
+            tools:text="@string/cancel"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/cl_d63535"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:background="@color/cl_e6e6e6"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/ok"
+            android:gravity="center"
+            tools:text="@string/delete"
+            android:textColor="@color/cl_d63535"
+            android:textSize="@dimen/font_size_16"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

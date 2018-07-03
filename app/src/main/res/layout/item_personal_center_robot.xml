@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+ >
+    <ImageView
+        android:id="@+id/robat_im"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_centerVertical="true"
+      />
+
+    <TextView
+        android:id="@+id/robat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="智能小A股"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/robat_im"
+        android:textSize="@dimen/font_size_13"
+        android:gravity="center"/>
+
+    <!--   android:drawableRight="@drawable/spread"
+       android:drawablePadding="10dp"-->
+    <ImageView
+        android:id="@+id/im_spread"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:src="@drawable/spread"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+
+        />
+   <!-- <TextView
+        android:id="@+id/robat_count"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@id/im_spread"
+        android:text="今日有3条调仓动态"
+        android:textColor="@color/cl_raise"
+        android:textSize="@dimen/font_size_10"
+        android:gravity="center"
+        android:paddingRight="10dp"/>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/cl_dfdfdf"
+   android:layout_alignParentBottom="true"></View>
+</RelativeLayout>

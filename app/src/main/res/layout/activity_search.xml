@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background_new"
+    android:orientation="vertical"
+    tools:context="com.rjzd.aistock.ui.activity.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_title_height"
+        android:background="@color/colorTitlebar"
+        android:gravity="center_vertical">
+
+        <com.rjzd.aistock.ui.views.ClearEditText
+            android:id="@+id/cet_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cet_height"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:layout_centerVertical="true"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="7.5dp"
+            android:hint="搜索股票名称/代码"
+            android:lines="1"
+            android:maxLength="50"
+            android:paddingLeft="5.5dp"
+            android:textColor="#eef3f7"
+            android:textColorHint="@color/cl_888888"
+            android:textSize="@dimen/font_size_13"
+            android:background="@drawable/search_edittext_shape"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="13dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_15" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6"
+        android:layout_alignParentBottom="true"
+        />
+    <!-- 搜索历史 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!-- 根据搜索条件匹配  -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       />
+
+    <TextView
+        android:id="@+id/tv_no_retult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_retult"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/cl_999999"
+        android:paddingTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_toolbar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorTitlebar">
+
+    <FrameLayout
+        android:id="@+id/ll_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_mine"
+            />
+
+        <ImageView
+            android:id="@+id/iv_user_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_gravity="end|top"
+            android:src="@drawable/shape_bg_circle"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/ll_user"
+        android:layout_toStartOf="@+id/fl_msg"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:background="@drawable/search_edittext_shape"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_innner_search"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:textSize="@dimen/font_size_11"
+            android:textColor="@color/cl_888888"
+            android:text="@string/search_hint"
+            android:typeface="monospace"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/ic_search_robot"
+            />
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_rise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/selector_range_left_sq_angle"
+            android:text="涨幅"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/selector_range_textcolor_with2tab"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_fall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/selector_range_right_sq_angle"
+            android:text="跌幅"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/selector_range_textcolor_with2tab"
+            />
+    </RadioGroup>
+
+    <!-- 未读消息数 -->
+    <FrameLayout
+        android:id="@+id/fl_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_top_nav_message"
+            />
+
+        <TextView
+            android:id="@+id/tv_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:background="@drawable/ic_new_msg"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_9"
+            tools:text="9+"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

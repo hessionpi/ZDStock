@@ -1,0 +1,298 @@
+<resources>
+    <string name="app_name">壹眼富</string>
+
+    <!--Toolbar  Action-->
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_add">Add</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
+    <string name="press_again_exit">再点击一次退出</string>
+
+    <!--<string name="home" translatable="false">首页</string>-->
+    <string name="ai" translatable="false">AI机器人</string>
+    <!--<string name="strategy" translatable="false">自定义选股</string>-->
+    <string name="markets" translatable="false">行情</string>
+    <string name="portfolio" translatable="false">自选</string>
+    <string name="ai_robot" translatable="false">AI机器人</string>
+
+    <string name="fen_shi">分时</string>
+    <string name="ri_k">日K</string>
+    <string name="zhou_k">周K</string>
+    <string name="yue_k">月K</string>
+    <string name="minute">分钟</string>
+
+    <string name="common_supplement_ok">好的</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <!--<string name="zixuan_add">添加自选</string>-->
+    <string name="delete_zixuan">删除自选</string>
+    <string name="delete_zixuan_warning">您确定要删除自选股吗？</string>
+    <string name="add_zixuan">添加自选</string>
+    <string name="add_zixuan_empty">点击添加自选股</string>
+
+    <string name="stock_code">股票</string>
+    <string name="current_price">最新</string>
+    <string name="rate">涨跌幅</string>
+    <string name="range">涨跌</string>
+    <string name="suspend">停牌</string>
+
+    <string name="found">今日资金</string>
+    <string name="found_title">实时成交资金流向(万元)</string>
+    <string name="search_history">搜索历史</string>
+
+    <string name="open">开</string>
+    <string name="prevClose">收</string>
+    <string name="high">高</string>
+    <string name="low">低</string>
+    <string name="turnover">换</string>
+    <string name="per">盈</string>
+    <string name="amount">成交额</string>
+    <string name="circulate">流通股</string>
+    <string name="total">总股本</string>
+    <string name="mktCap">总市值</string>
+    <string name="currentvalue">流通值</string>
+    <string name="exponent_tradingvolume">量</string>
+    <string name="exponent_amount">额</string>
+    <string name="exponent_rise">上涨家数</string>
+    <string name="exponent_fall">下跌家数</string>
+
+
+    <string name="prediction">AI分析</string>
+    <string name="finance">财务</string>
+    <string name="news">新闻</string>
+    <string name="announcement">公告</string>
+    <string name="industry">行业</string>
+    <string name="concept">概念</string>
+    <string name="region">区域</string>
+    <string name="research_report">研报</string>
+    <string name="funds">资金</string>
+    <string name="profile">概况</string>
+
+    <string name="riseCrunchies">成份股涨幅榜</string>
+    <string name="fallCrunchies">成份股跌幅榜</string>
+
+
+    <string name="company_name">公司名称</string>
+    <string name="establishment_date">成立日期</string>
+    <string name="exchange">上市市场</string>
+    <string name="registered_capital">注册资本</string>
+    <string name="corporation_representative">法人代表</string>
+    <string name="listing_date">上市日期</string>
+    <string name="company_website">公司网址</string>
+    <string name="business_scope">主营业务</string>
+
+    <string name="cet_hint">搜索股票名称或代码</string>
+    <string name="clear_history">清空搜索历史</string>
+
+    <string name="no_retult">没找到相关股票</string>
+
+    <string name="fund_fiveday">近五日主力资金净流</string>
+    <string name="fund_jingliu">资金近期累计净流</string>
+
+    <!-- 自定义选股 -->
+    <string name="rule">自定义规则</string>
+    <string name="stock_price">股票价格</string>
+    <string name="deal_sum">成交额</string>
+    <string name="stock_range">股价涨幅</string>
+    <string name="industry_plate">行业板块</string>
+    <string name="listed_days">上市天数</string>
+    <string name="valuation">市值</string>
+    <string name="amplitude">股价振幅</string>
+    <string name="raise_fall_break">涨跌停</string>
+    <string name="concept_plate">概念板块</string>
+
+    <string name="condition_undo">您还未定义选股条件</string>
+    <string name="start_select">开始选股</string>
+    <string name="empty_stock_warning">您定义了一条规则后，点\n击“开始选股”，我才会帮您\n找出符合你要求的股票哦 !</string>
+    <string name="no_stock_warning">没有找到符合要求的股票！\n您可以试试修改规则重新开始\n选股！</string>
+
+    <string name="login_regist">登录/注册</string>
+    <string name="remind_settings">消息提醒</string>
+    <string name="account_binding">账号绑定</string>
+    <string name="about_us">关于我们</string>
+    <string name="share_title">分享壹眼富</string>
+    <string name="grade">请给我们评分</string>
+    <string name="versions">检查版本</string>
+    <string name="feedback">意见反馈</string>
+    <string name="person_share">分享给朋友</string>
+    <string name="common_question">常见问题</string>
+    <string name="contact_us">联系我们</string>
+    <string name="ai_empty">您还未关注智能机器人</string>
+    <string name="my_ai">我关注的AI智能</string>
+    <string name="remind_receive_new_msg">消息提醒</string>
+    <string name="remind_trans_position">AI机器人调仓</string>
+    <string name="remind">每日牛板更新</string>
+    <string name="daily">每日金股更新</string>
+    <string name="remind_share">邀请朋友成功</string>
+    <string name="remind_ai_weeklynewspaper">AI周报更新</string>
+    <string name="user_info">个人资料</string>
+    <string name="avatar">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="cellphone">手机号</string>
+    <string name="code">验证码</string>
+    <string name="binding">账号绑定</string>
+    <string name="gender">性别</string>
+    <string name="area">地区</string>
+    <string name="load_failed">亲,数据加载失败啦</string>
+    <string name="no_network">亲，请检查您的手机是否联网</string>
+    <string name="send_code">发送验证码</string>
+    <string name="agree">我已阅读并同意</string>
+    <string name="deal">《用户服务协议》</string>
+    <string name="user_agreement">用户服务协议</string>
+    <string name="binding_wx">微信</string>
+    <string name="binding_qq">腾讯QQ</string>
+    <string name="binding_sina">新浪微博</string>
+    <string name="unbind">未绑定</string>
+    <string name="binding_mobile">绑定手机号</string>
+    <string name="submit">提交</string>
+
+    <string name="grail_dynamic">大盘动态</string>
+    <string name="plate_rose">大盘数据</string>
+
+    <string name="zixuan_new">自选股新闻公告</string>
+
+    <string name="hint">温馨提示：综合指数分析仅代表分析结果，不够成投资建议</string>
+    <string name="ai_exponent">AI智能综合指数</string>
+    <string name="empty">看空</string>
+    <string name="flat">看平</string>
+    <string name="more">看多</string>
+    <string name="radar">因子雷达</string>
+    <string name="prediction_integrated">综合预测</string>
+    <string name="prediction_periodicity">周期性预测</string>
+    <string name="prediction_relationship">关联矩阵预测</string>
+    <string name="relational_stock">关联股</string>
+
+    <string name="ai_dynamic">调仓动态</string>
+    <string name="load_more">加载更多</string>
+    <string name="no_more">没有更多了</string>
+
+    <string name="prediction_trend">趋势预测</string>
+    <string name="prediction_close">预测收盘价</string>
+    <string name="prediction_range">预测涨跌幅</string>
+
+    <string name="company_profile">公司概况</string>
+    <string name="share_holder_info">股东信息</string>
+    <string name="basic_info">基本资料</string>
+    <string name="executive">公司高管</string>
+    <string name="dividends">分红送配</string>
+    <string name="capitalStructure">股本结构</string>
+    <string name="circulation_shareholder">十大流通股东</string>
+    <string name="organization_shareholder">机构持股</string>
+    <string name="name">姓名</string>
+    <string name="position">职位</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="year">年度</string>
+    <string name="plan">方案（每十股）</string>
+    <string name="xr_date">除权日</string>
+
+    <string name="attention_add">添加关注</string>
+    <string name="attention_cancel">取消关注</string>
+    <string name="attention_warning">您确定要取消关注机器人吗？</string>
+    <string name="share_for_points">分享赚积分</string>
+    <string name="ai_explain">过往业绩不代表未来表现，AI机器人仅做展示用途，不构成投资建议</string>
+    <string name="tips_disclaimer">（所有数据及信息仅供参考，不构成投资建议!）</string>
+
+    <string name="new_version">发现新版本</string>
+    <string name="update_ignore">暂不更新</string>
+    <string name="update_now">立即更新</string>
+    <string name="downloading">新版本下载中</string>
+    <string name="down_sucess">下载成功</string>
+    <string name="down_fail">下载失败</string>
+
+    <!-- loading  string-->
+    <string name="loading">努力加载中……</string>
+    <string name="latest_transfer">最新调仓</string>
+    <string name="hold_stock">持仓股票</string>
+    <string name="profit_loss_of_history">历史股票盈亏</string>
+    <string name="has_more">更多</string>
+    <string name="hold_percentage">持仓占比</string>
+    <string name="now_price">现价</string>
+    <string name="profit_loss">盈亏</string>
+    <string name="hold_days">持股天数</string>
+    <string name="buy_date">买入日期</string>
+    <string name="transfer_strategy">调仓策略</string>
+
+    <string name="ai_rise">涨</string>
+    <string name="ai_fall">跌</string>
+    <string name="ai_remain">平</string>
+    <string name="ai_none">- -</string>
+
+    <string name="prediction_multi_dimension">多因子分析结果：</string>
+    <string name="prediction_cyclical">周期性分析结果：</string>
+    <string name="prediction_cloud_map">云图分析结果：</string>
+    <string name="prediction_relevance">关联股分析结果：</string>
+
+    <string name="search_hint">输入您关注的股票，AI预测涨跌幅</string>
+    <string name="learn_more">了解详情</string>
+    <string name="predict_none_warning">“该股票因上市时间过短或其他原因，导致相关数据过少，无法进行AI综合分析，故暂时无法对该股票进行预测。敬请谅解!”</string>
+    <string name="sign_name">—壹眼富AI股票分析师</string>
+    <string name="analysis_time">分析时间：</string>
+    <string name="analysis_logic">分析逻辑：</string>
+    <string name="analysis_result">分析结果：</string>
+    <string name="analysis_logic_muti_factor_msg">多因子分析主要从两个方向预测\n1.从股票的技术指标和动量指标预测股票的短期涨跌幅；\n2.从股票的基本面、股票与宏观经济的关系、股票的机构持仓情况预测股票未来的中长期涨跌幅。</string>
+    <string name="analysis_logic_relevance_msg">据最近3个月的历史数据统计出股票的涨跌关联度，根据关联度和预测涨跌幅以及所有关联股票的背离度来评估明日涨跌概率。</string>
+    <!--<string name="request_data_error">"壹眼富系统开小差了，请稍后重试！"</string>-->
+    <string name="network_error">"您的网络有问题，请检查重试！"</string>
+    <string name="radar_factor_predict_none">因该因子数据不足或其它原因，暂时该因子无法分析。</string>
+    <string name="waiting_for_price">等待开盘</string>
+    <string name="no_data">暂无数据</string>
+    <string name="no_rise">暂无涨幅榜</string>
+    <string name="no_fall">暂无跌幅榜</string>
+    <string name="is_newer">已经是最新版本</string>
+
+    <string name="go_earn_points">去赚积分</string>
+    <string name="go_login">去登录</string>
+    <string name="points_privilege">积分特权</string>
+    <string name="my_task">我的任务</string>
+    <string name="points_record">积分记录</string>
+    <string name="daily_best_stock">每日金股</string>
+    <string name="daily_best_plate">每日牛板</string>
+    <string name="recommend_data_update_tips">每个交易日早上9点前更新AI推荐，仅供参考，不构成投资建议!</string>
+    <string name="ai_weekly">AI周报</string>
+    <string name="vip">VIP会员</string>
+    <string name="unlock">积分解锁</string>
+    <string name="unlocked">已解锁</string>
+    <string name="comment_daily_best_stock">通过壹眼富AI大数据，每个交易日推荐三只最优股票!</string>
+    <string name="comment_daily_best_plate">通过壹眼富AI大数据，每个交易日推荐三个最有发展空间的主题板块!</string>
+    <string name="comment_vip">拥有VIP会员皇冠标识，在后期将推出更多VIP会员专有服务。</string>
+    <string name="expect_more_vip_privilege">更多VIP积分特权敬请期待</string>
+    <string name="invite_friends">邀请好友</string>
+    <string name="invite_comment">邀请好友成功注册壹眼富</string>
+    <string name="sign_in">每日活跃</string>
+    <string name="sign_in_comment">每日登录一次壹眼富APP</string>
+    <string name="share_app">分享壹眼富</string>
+    <string name="share_app_comment">将壹眼富推荐分享到朋友圈</string>
+    <string name="portfolio_comment">加入至少5支股票到自选股</string>
+    <string name="attention_ai">关注AI机器人</string>
+    <string name="attention_ai_comment">关注至少一个AI机器人</string>
+    <string name="account_binding_comment">手机和微信同时绑定到壹眼富</string>
+    <string name="finish_today">已完成</string>
+    <string name="record_empty">暂无记录</string>
+    <string name="unlock_msg">解锁该特权需要消耗%1$d积分，确定解锁该特权吗？</string>
+    <string name="unlock_not">暂不解锁</string>
+    <string name="unlock_now">立即解锁</string>
+    <string name="newer_points">新增积分+%1$d</string>
+    <string name="tips">小提示</string>
+    <string name="share_explanation">您可以点击个股详情页面、AI机器人详情页面左下角的“分享”按钮，分享到朋友圈或分享给朋友。</string>
+    <string name="ai_attention_explanation">您可以点击AI机器人详情页面右下角的“关注”按钮，添加关注AI机器人。</string>
+    <string name="warning_earn_points_by_share">*每日只有第一次分享赠送积分！</string>
+    <string name="got_it">知道了</string>
+
+    <!--邀请朋友-->
+    <string name="invite_friend">邀请朋友</string>
+    <string name="my_code">我的邀请码</string>
+    <string name="invite_way">邀请方式</string>
+    <string name="invite_empty">暂无邀请</string>
+    <string name="invite_code">邀请码</string>
+    <string name="invite_code_text">将您的邀请码告诉朋友，在其注册时填写您的邀请码即可</string>
+    <string name="copy_code">复制邀请码</string>
+    <string name="invite_link">邀请链接</string>
+    <string name="invite_link_text">将您的专属邀请链接网页分享到微信、朋友圈、微信好友，好友通过链接注册即可，无需填写邀请码</string>
+    <string name="invite_share">立即分享</string>
+    <string name="qr_code">专属二维码</string>
+    <string name="qr_code_text">生成您的专属邀请二维码图片，将图片保存到手机相册，分享到微博、朋友圈、微信好友、好友长按识别二维码注册即可，无需填写二维码</string>
+    <string name="my_qr_code">我的二维码</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjzd.aistock.ui.activity.AiEarningsActivity"
+    android:orientation="vertical"
+    android:background="@color/cl_background_new">
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back"
+        app:titleText="持仓股票"
+        >
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/cl_eeeeee"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+     >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="股票"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="持仓占比"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_10" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="现价"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="盈亏"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_10" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_positionstock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

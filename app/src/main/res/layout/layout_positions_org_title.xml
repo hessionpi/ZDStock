@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/cl_eeeeee"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="股东"
+        android:textColor="@color/cl_555555"
+        android:textSize="@dimen/font_size_13" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:text="占比"
+        android:textColor="@color/cl_555555"
+        android:textSize="@dimen/font_size_13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="right"
+        android:layout_marginLeft="10dp"
+        android:text="持仓数量(万股)"
+        android:textColor="@color/cl_555555"
+        android:textSize="@dimen/font_size_13" />
+</LinearLayout>

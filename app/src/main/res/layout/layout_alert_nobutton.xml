@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_dialog_close"
+        android:layout_gravity="top|right"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/font_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center"
+            android:textColor="@color/cl_d63535"
+            tools:text="周期性分析"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layerType="software"
+            android:background="@drawable/shape_dash_line"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_logic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/cl_333333"
+                android:text="@string/analysis_logic"
+                />
+
+            <TextView
+                android:id="@+id/tv_logic_message"
+                android:textSize="@dimen/font_size_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:textScaleX="1.05"
+                android:textColor="@color/c1_666666"
+                tools:text="当前处于主声浪，短期内看涨，周期出于末尾阶段，预计今日出现反转趋势"
+                />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/cl_333333"
+                android:text="@string/analysis_result"
+                />
+
+            <TextView
+                android:id="@+id/tv_result_message"
+                android:textSize="@dimen/font_size_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:textScaleX="1.05"
+                android:textColor="@color/c1_666666"
+                tools:text="当前处于主声浪，短期内看涨，周期出于末尾阶段，预计今日出现反转趋势"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

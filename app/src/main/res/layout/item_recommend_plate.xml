@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cl_e6e6e6"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/recommend_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:isIndicator="false"
+                android:maxHeight="15dp"
+                android:minHeight="15dp"
+                android:numStars="5"
+                android:progressDrawable="@drawable/layer_live_rating_bar"
+                android:rating="2"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:text="推荐强度"
+                android:textColor="@color/cl_606060"
+                android:textSize="@dimen/font_size_11" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_the_day_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    tools:text="18.53"
+                    android:textColor="@color/cl_d63535"
+                    android:textSize="@dimen/font_size_20" />
+
+                <TextView
+                    android:id="@+id/symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/cl_d63535"
+                    android:textSize="@dimen/font_size_12"
+                    android:text="%" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="推荐日实际涨跌幅 "
+                android:textColor="@color/cl_606060"
+                android:textSize="@dimen/font_size_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_plate_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_relation_red_bg"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    tools:text="钢铁行业"
+                    android:textColor="@color/cl_d63535"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="详情>>"
+                    android:textColor="@color/cl_d63535"
+                    android:textSize="@dimen/font_size_12" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.1"
+                tools:text="推荐理由：丰和日复核人复核人均符合健康芙蓉姐夫和认可减肥和软件开发和福尔康经费和软件开发和人家看客服和软件开发和人家客户伏尔加"
+                android:textColor="@color/cl_888888"
+                android:textSize="12sp" />
+
+            <!-- 推荐板块相关联的股票 -->
+            <LinearLayout
+                android:id="@+id/recommend_stock_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/public_corners_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        tools:text="解锁每日牛版"
+        android:background="@drawable/ic_dialog_title_bg"
+        />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:lineSpacingExtra="6dp"
+        android:textSize="14sp"
+        android:textColor="@color/cl_555555"
+        tools:text="解锁特权需要消耗您300积分，确定解锁该特权吗？"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.0"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:background="@drawable/points_unlock_shape"
+            />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1.0"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_unlock_now_shape"
+            />
+    </LinearLayout>
+
+</LinearLayout>

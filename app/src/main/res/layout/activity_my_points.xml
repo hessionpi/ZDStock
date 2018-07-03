@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.rjzd.aistock.ui.activity.MyPointsActivity"
+    android:background="@color/cl_background_new">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_points_bg"
+        android:paddingBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/image_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"
+            android:text="我的积分"
+            />
+
+        <TextView
+            android:id="@+id/my_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            tools:text="540"
+            android:textSize="@dimen/font_size_24"
+            android:textColor="@color/cl_ff6532"
+            android:background="@drawable/ic_points_value_bg"
+            />
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_privilege"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/points_privilege"
+            android:textColor="@color/selector_textcolor_points"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/cl_e6e6e6" />
+
+        <RadioButton
+            android:id="@+id/rb_task"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/my_task"
+            android:textColor="@color/selector_textcolor_points"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/cl_e6e6e6" />
+
+        <RadioButton
+            android:id="@+id/rb_record"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/points_record"
+            android:textColor="@color/selector_textcolor_points"
+            android:textSize="@dimen/font_size_14" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/cl_f2f2f2"
+        />
+
+    <LinearLayout
+        android:id="@+id/container_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+
+</LinearLayout>

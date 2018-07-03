@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white"
+    tools:context="com.rjzd.aistock.ui.activity.PlateRoseActivity">
+
+    <TextView
+        android:id="@+id/tv_column1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/font_size_10"
+        android:textColor="@color/cl_8e8e8e"
+        tools:text="股票"
+        />
+
+    <CheckBox
+        android:id="@+id/tv_column2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:paddingLeft="37dp"
+        android:paddingRight="37dp"
+        android:gravity="center_vertical"
+        android:button="@null"
+        android:drawableRight="@drawable/selector_cb_sort"
+        android:textSize="@dimen/font_size_10"
+        android:textColor="@color/cl_8e8e8e"
+        tools:text="涨跌幅"
+        android:checked="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_column3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_10"
+        android:textColor="@color/cl_8e8e8e"
+        tools:text="最新价"
+        />
+
+</LinearLayout>

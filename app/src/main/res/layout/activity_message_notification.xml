@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjzd.aistock.ui.activity.MessageNotificationActivity"
+    android:orientation="vertical"
+    android:background="@color/cl_background_new">
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back"
+        app:titleText="消息通知"
+        >
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+    </com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView>
+
+</LinearLayout>

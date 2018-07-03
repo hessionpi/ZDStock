@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.rjzd.aistock.ui.activity.FeedbackActivity"
+    android:gravity="center_horizontal">
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back"
+        app:titleText="@string/feedback"
+        >
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_idea_text_bg"
+        android:text="欢迎您对一眼富提出您的意见，一旦采纳，均会增送红包奖励哦！"
+        android:textColor="@color/cl_d63535"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        />
+
+<ImageView
+    android:layout_width="215dp"
+    android:layout_height="215dp"
+    android:src="@drawable/qr_code"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="↑↑↑长按识别二维码或扫一扫添加一眼富客服↑↑↑"
+        android:textColor="@color/cl_333333"
+        android:textSize="@dimen/font_size_12"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您也可以添加微信号："
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/font_size_12"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yiyanfukefu"
+            android:textColor="@color/cl_d63535"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/font_size_18"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加一眼富客服为好友！"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/font_size_12"/>
+    </LinearLayout>
+</LinearLayout>

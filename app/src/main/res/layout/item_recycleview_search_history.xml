@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item_selected"
+  >
+    <TextView
+        android:id="@+id/item_stockname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="新潮A股"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/cl_333333"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/item_stockcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="000781"
+        android:textSize="@dimen/font_size_10"
+        android:textColor="@color/cl_888888"
+        android:layout_below="@id/item_stockname"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="6dp"/>
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_add"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="17.5dp"
+       android:layout_centerVertical="true"
+       />
+    <TextView
+        android:id="@+id/tv_has_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="已添加"
+        android:textSize="@dimen/font_size_13"
+        android:textColor="@color/cl_888888"
+        android:visibility="gone"/>
+</RelativeLayout>

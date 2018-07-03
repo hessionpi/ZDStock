@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        tools:text="139"
+        android:textColor="@color/cl_d63535"
+        android:textSize="@dimen/font_size_9"
+        />
+
+    <TextView
+        android:id="@+id/tv_fundamental_name"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/cl_666666"
+        android:textSize="@dimen/font_size_10"
+        tools:text="行业平均" />
+
+    <ProgressBar
+        android:id="@+id/pb_fundamental"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="7dp"
+        android:layout_weight="1.0"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_fundamentals_color"
+        tools:progress="10" />
+
+    <TextView
+        android:id="@+id/tv_fundamental_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/cl_999999"
+        android:textSize="@dimen/font_size_10"
+        tools:text="12.8" />
+</LinearLayout>

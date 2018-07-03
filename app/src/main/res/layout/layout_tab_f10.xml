@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:background="@color/cl_f0f0f0"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        style="@style/chart_tab_style">
+
+        <TextView
+            android:id="@+id/prediction"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="@string/prediction"
+            android:textColor="@color/cl_d63535"
+            android:textSize="@dimen/font_size_13" />
+
+        <View
+            android:id="@+id/prediction_idc"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/cl_d63535" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/chart_tab_style">
+
+        <TextView
+            android:id="@+id/fund"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="资金"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />
+
+        <View
+            android:id="@+id/funds_idc"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/cl_d63535"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/chart_tab_style">
+
+        <TextView
+            android:id="@+id/finance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="@string/finance"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />
+
+        <View
+            android:id="@+id/finance_idc"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/cl_d63535"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/chart_tab_style">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/profile"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_13" />
+
+        <View
+            android:id="@+id/profile_idc"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/cl_d63535"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

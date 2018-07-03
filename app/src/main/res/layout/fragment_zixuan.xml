@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4fa">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f4fa">
+
+        <LinearLayout
+            android:id="@+id/exponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/exponent_view"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/ll_advanced_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/golden_stock"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp"
+                    android:background="@drawable/zixuan_stock_white_bg"
+                    android:drawableLeft="@drawable/zixuan_golden_stock_icon"
+                    android:gravity="center"
+                    android:text="每日金股"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_13" />
+
+                <TextView
+                    android:id="@+id/best_plate"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zixuan_stock_white_bg"
+                    android:drawableLeft="@drawable/zixuan_cattle_plate_icon"
+                    android:gravity="center"
+                    android:text="每日牛板"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_13" />
+
+                <TextView
+                    android:id="@+id/ai_weekly"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:paddingStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zixuan_stock_white_bg"
+                    android:drawableLeft="@drawable/zixuan_weeklynewspaper_icon"
+                    android:gravity="center"
+                    android:text="AI周报"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_13" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#f0f4fa"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="center"
+                android:src="@drawable/zixuan_packup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stocks_zixuan_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/exponent"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ZixuanRecycleTitleStyle"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/stock_code" />
+
+            <TextView
+                style="@style/ZixuanRecycleTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical|right"
+                android:text="最新价" />
+
+            <TextView
+                style="@style/ZixuanRecycleTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical|right"
+                android:text="涨跌幅" />
+
+            <TextView
+                style="@style/ZixuanRecycleTitleStyle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical|right"
+                android:text="AI预测" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_above="@+id/zixuan_stock"
+            android:background="@color/cl_e6e6e6" />
+
+
+        <RelativeLayout
+            android:id="@+id/zixuan_stock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/stocks_zixuan_header"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/stocks_zixuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/ll_add_zixuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="#f0f4fa"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_add_zixuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12.5dp"
+                    android:drawableTop="@drawable/ic_add_zixuan"
+                    android:gravity="center_horizontal"
+                    android:text="@string/add_zixuan_empty"
+                    android:textColor="@color/cl_d63535"
+                    android:textSize="@dimen/font_size_15" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView>

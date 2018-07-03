@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cl_e6e6e6"></View>
+
+
+    <LinearLayout
+        android:id="@+id/ai_unfold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/shape_ai_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/unfold_img_ai"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:paddingBottom="5dp"
+
+                android:src="@drawable/ai_avatar_default" />
+
+            <TextView
+                android:id="@+id/unfold_ai_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="达尔文"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:id="@+id/ll_ai_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/unfold_followed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_weiguanzhu"
+                    android:gravity="center"
+                    android:text="未关注"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:id="@+id/earming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/unfold_income_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textColor="@color/cl_d63535"
+                        android:textSize="@dimen/font_size_15" />
+
+                    <TextView
+                        android:id="@+id/unfold_income_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:text="14.77"
+                        android:textColor="@color/cl_d63535"
+                        android:textSize="@dimen/font_size_30"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/unfold_income_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="@color/cl_d63535"
+                        android:textSize="@dimen/font_size_15" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="总收益"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/font_size_11" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/online_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_ai_name"
+                android:layout_marginTop="10dp"
+                android:text="生日：2016-3-10"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_12" />
+
+
+            <TextView
+                android:id="@+id/tv_chara_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/online_date"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/title_special"
+                android:text="短线操作    收益稳定"
+                android:textColor="@color/cl_d63535"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_chara_label"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="10dp"
+                android:text="了解自己的理财基因，理财才有的放矢，我们才能更懂你，两市热潮高温不退，期望"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_12" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6"></View>
+
+
+</LinearLayout>

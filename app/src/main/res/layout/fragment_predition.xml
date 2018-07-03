@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rjzd.aistock.ui.views.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_stickynavlayout_innerscrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background_new">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 为空显示效果-->
+        <include
+            android:id="@+id/predict_none_layout"
+            layout="@layout/layout_predict_none"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/predict_ok_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--综合分析-->
+            <include layout="@layout/layout_predition_synthesize"></include>
+            <!--多因子分析-->
+            <include layout="@layout/layout_predition_radar"></include>
+
+            <!--周期性分析-->
+            <include layout="@layout/layout_predition_periodicity"></include>
+
+            <!--云图分析-->
+            <include layout="@layout/layout_predition_ichimoku"></include>
+            <!--关联股分析-->
+            <include layout="@layout/layout_predition_relevance"></include>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.rjzd.aistock.ui.views.MyScrollView>

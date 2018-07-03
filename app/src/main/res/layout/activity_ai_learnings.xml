@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background_new"
+    android:orientation="vertical"
+    tools:context="com.rjzd.aistock.ui.activity.AiEarningsActivity">
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back"
+        app:titleText="历史盈亏">
+
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cl_e6e6e6">
+
+    </View>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/ai_history_linechart"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/cl_e6e6e6">
+
+    </View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/cl_f9f9f9">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="股票"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="盈亏率"
+            android:textColor="@color/cl_d63535"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="持股天数"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="买入日期"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_10" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_ai_stock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

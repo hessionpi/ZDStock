@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/cl_555555"
+        android:textSize="@dimen/font_size_14"
+        tools:text="兑换VIP会员"
+        />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:drawableEnd="@drawable/ic_points_best_stock"
+        android:drawablePadding="3dp"
+        android:textColor="@color/cl_fea41a"
+        android:textSize="@dimen/font_size_12"
+        tools:text="+30"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="start"
+        android:textColor="@color/cl_cccccc"
+        android:textSize="@dimen/font_size_12"
+        tools:text="2017-07-19"
+        />
+</FrameLayout>
+

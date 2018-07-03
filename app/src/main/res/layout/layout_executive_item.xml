@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="horizontal"
+    android:background="@color/cl_eeeeee"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="@string/name"
+        android:textColor="@color/cl_555555"
+        android:textSize="@dimen/font_size_13" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_13"
+        android:textColor="@color/cl_555555"
+        android:text="@string/position"
+        />
+
+    <TextView
+        android:id="@+id/start_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:textSize="@dimen/font_size_13"
+        android:textColor="@color/cl_555555"
+        android:text="@string/start_date"
+        />
+
+    <TextView
+        android:id="@+id/end_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:paddingRight="15dp"
+        android:gravity="right"
+        android:textSize="@dimen/font_size_13"
+        android:textColor="@color/cl_555555"
+        android:text="@string/end_date"
+        />
+</LinearLayout>

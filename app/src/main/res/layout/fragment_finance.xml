@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/id_stickynavlayout_innerscrollview"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="42dp">
+        <RadioGroup
+            android:id="@+id/rg_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_performance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_left_sq_angle"
+                android:button="@null"
+                android:checked="true"
+                android:text="业绩"
+                android:textColor="@color/selector_textcolor_with2tab"
+                android:textSize="@dimen/font_size_13" />
+
+            <RadioButton
+                android:id="@+id/rb_analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_right_sq_angle"
+                android:button="@null"
+                android:text="分析"
+                android:textColor="@color/selector_textcolor_with2tab"
+                android:textSize="@dimen/font_size_13" />
+        </RadioGroup>
+
+        <!--业绩-->
+        <include
+            layout="@layout/layout_performance">
+        </include>
+
+        <!--分析-->
+        <include
+            layout="@layout/layout_analyze"
+            >
+        </include>
+        
+ <!--       <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />-->
+    </LinearLayout>
+</ScrollView>

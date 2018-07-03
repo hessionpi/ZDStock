@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_weekly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="2017年7月第一周AI周报"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_14"
+        android:drawablePadding="13dp"
+        android:drawableLeft="@drawable/week_new_img"
+        android:drawableRight="@drawable/icon_more"
+        />
+</LinearLayout>

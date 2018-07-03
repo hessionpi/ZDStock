@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingLeft="10dp"
+    android:background="@drawable/selector_item_selected"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/ai_stock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="柳钢股份"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/ai_stock_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="601003"
+            android:textColor="@color/cl_888888"
+            android:textSize="@dimen/font_size_10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_position_percentage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="10.07%"
+        android:textColor="@color/cl_333333"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_latest_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="15.86"
+        android:textColor="@color/cl_333333"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_profit_and_loss"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="12.58%"
+        android:textColor="@color/cl_f95555"
+        android:textSize="@dimen/font_size_14" />
+</LinearLayout>
+

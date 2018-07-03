@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background_new"
+    android:orientation="vertical">
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back"
+        >
+
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <com.rjzd.aistock.ui.views.ReboundScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@id/toolbar"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_item_ai" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/tips_disclaimer"
+                android:textColor="@color/cl_d63535"
+                android:textSize="@dimen/font_size_13"
+                />
+
+            <include layout="@layout/layout_ai_earnings_chart" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cl_e6e6e6" />
+            <!-- 最新调仓 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@color/white"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_latest_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/red_line"
+                    android:drawablePadding="12dp"
+                    android:gravity="center"
+                    android:text="@string/latest_transfer"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_latest_transfer_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/tv_title_latest_transfer"
+                    android:gravity="bottom"
+                    android:textColor="@color/cl_888888"
+                    android:textSize="@dimen/font_size_10"
+                    tools:text="3-28 09:15" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_more"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/has_more"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="@dimen/font_size_13" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/cl_e6e6e6"/>
+
+            <!--  解决android6.0 以上Recycleview在scrollview中显示不全问题 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_transfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/cl_e6e6e6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cl_e6e6e6" />
+            <!-- 持仓股票 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_hold_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/red_line"
+                    android:drawablePadding="12dp"
+                    android:gravity="center"
+                    android:text="@string/hold_stock"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_hold_stock_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_more"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/has_more"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="@dimen/font_size_13" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:text="@string/stock_code"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/hold_percentage"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/now_price"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/profit_loss"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+            </LinearLayout>
+
+            <!--  解决android6.0 以上Recycleview在scrollview中显示不全问题 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_hold_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/cl_e6e6e6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/cl_e6e6e6" />
+            <!-- 历史股票盈亏  -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv_title_profit_loss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/red_line"
+                    android:drawablePadding="12dp"
+                    android:gravity="center"
+                    android:text="@string/profit_loss_of_history"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_profit_and_loss_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@drawable/icon_more"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="30dp"
+                    android:text="@string/has_more"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="@dimen/font_size_13" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:text="@string/stock_code"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/profit_loss"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/hold_days"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/buy_date"
+                    android:textColor="@color/cl_b0b0b0"
+                    android:textSize="@dimen/font_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_stock_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="@dimen/font_size_14"
+                        tools:text="沙河股份" />
+
+                    <TextView
+                        android:id="@+id/tv_stock_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start"
+                        android:textColor="@color/cl_888888"
+                        android:textSize="@dimen/font_size_10"
+                        tools:text="000651" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_profit_and_loss_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="start"
+                    android:textColor="@color/cl_f95555"
+                    android:textSize="@dimen/font_size_14"
+                    tools:text="+0.65%" />
+
+                <TextView
+                    android:id="@+id/tv_hold_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_14"
+                    tools:text="10" />
+
+                <TextView
+                    android:id="@+id/tv_buy_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="@dimen/font_size_14"
+                    tools:text="2017-04-23" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/cl_e6e6e6" />
+
+        </LinearLayout>
+
+    </com.rjzd.aistock.ui.views.ReboundScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_eeeeee">
+
+        <TextView
+            android:id="@+id/tv_share_for_points"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/share_icon"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:text="@string/share_for_points"
+            android:textColor="@color/cl_333333"
+            android:textSize="@dimen/font_size_14" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:background="@color/cl_dddddd" />
+
+        <TextView
+            android:id="@+id/attention"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_add_zixuan_icon"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textColor="@color/cl_d63535"
+            android:text="@string/attention_add"
+            android:checked="false"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

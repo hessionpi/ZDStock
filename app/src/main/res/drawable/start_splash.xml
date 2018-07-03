@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 底层-->
+    <item  android:drawable="@drawable/ic_welcome_bg" />
+
+    <!-- 顶层Logo -->
+    <item  android:gravity="top" android:drawable="@drawable/ic_welcome_top"/>
+
+</layer-list>

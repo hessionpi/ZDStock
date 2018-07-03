@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relation"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/shape_relation_red_bg"
+    android:gravity="center_vertical">
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+    <ImageView
+        android:id="@+id/iv_trend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/relation_raise"
+        android:paddingBottom="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预测"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_9" />
+</LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/cl_d63535"/>
+    <LinearLayout
+        android:id="@+id/ll_stock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:gravity="center_vertical"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:id="@+id/tv_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平安银行"
+            android:textColor="@color/cl_333333"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/font_size_11" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000001"
+            android:textColor="@color/cl_999999"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/font_size_9" />
+    </LinearLayout>
+</LinearLayout>

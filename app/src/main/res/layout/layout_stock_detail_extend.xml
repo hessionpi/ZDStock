@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cl_e6e6e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textColor="@color/cl_999999"
+                android:layout_marginRight="3dp"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/dateils_volume_transaction"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="0.15%"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="@string/circulate"
+                android:textColor="@color/cl_999999"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/dateils_circulate"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="0.15%"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="@string/total"
+                android:textColor="@color/cl_999999"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/dateils_total"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="0.15%"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mktCap"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/cl_999999"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_mktcap"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currentvalue"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/cl_999999"
+                android:textSize="@dimen/font_size_13" />
+
+            <TextView
+                android:id="@+id/tv_currentvalue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="32.35亿"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_13"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

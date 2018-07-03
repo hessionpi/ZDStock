@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background_new"
+    android:orientation="vertical"
+  >
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:id="@+id/plate_stock_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back">
+
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cl_e6e6e6">
+
+    </View>
+
+    <com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView
+        android:id="@+id/stock_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_plate_stock_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView>
+</LinearLayout>

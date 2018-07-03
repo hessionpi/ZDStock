@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            >
+
+            <TextView
+                android:id="@+id/tv_ai_always"
+                style="@style/ai_earnings_style"
+                android:layout_marginLeft="1dp"
+                android:text="总收益"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:id="@+id/always_idc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/cl_e6e6e6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+        >
+
+            <TextView
+                android:id="@+id/tv_ai_week"
+                style="@style/ai_earnings_style"
+                android:text="近一周"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:id="@+id/_week_idc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/cl_e6e6e6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+           >
+
+            <TextView
+                android:id="@+id/tv_ai_month"
+                style="@style/ai_earnings_style"
+                android:layout_marginLeft="1dp"
+                android:text="近一月"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:id="@+id/month_idc"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/cl_e6e6e6" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        >
+
+      <!--  <TextView
+            android:id="@+id/tv_ai_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            tools:text="13.34%"
+            android:textColor="@color/cl_e64b4b"
+            android:textSize="@dimen/font_size_26"
+            android:textStyle="bold"
+            android:typeface="sans" />-->
+        <LinearLayout
+            android:id="@+id/ll_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:id="@+id/income_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/cl_d63535"
+                android:textSize="@dimen/font_size_14"
+                />
+
+            <TextView
+
+                android:id="@+id/tv_ai_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="13.34"
+                android:textColor="@color/cl_e64b4b"
+                android:textSize="@dimen/font_size_26"
+                android:textStyle="bold"
+                android:typeface="sans"
+
+                />
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="@color/cl_d63535"
+                android:textSize="@dimen/font_size_14"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_income_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ll_range"
+            android:layout_alignTop="@+id/ll_range"
+            android:text="总收益概况"
+            android:textColor="@color/cl_888888"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/tv_beyond_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_income_profile"
+            android:layout_alignStart="@id/tv_income_profile"
+            android:layout_marginTop="5dp"
+            android:text="超越同期大盘4.00%"
+            android:textColor="@color/cl_888888"
+            android:textSize="@dimen/font_size_10" />
+        <TextView
+            android:id="@+id/tv_ai_income_color"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/shape_bg_circle"
+            android:drawablePadding="5dp"
+            android:text="AI机器人收益"
+            android:textSize="@dimen/font_size_9"
+            android:textColor="@color/cl_d63535"
+            />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_ai_income_color"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/shape_blue_bg_circle"
+            android:drawablePadding="5dp"
+            android:text="沪深300收益"
+            android:textSize="@dimen/font_size_9"
+            android:textColor="@color/cl_3e5b7d"
+            />
+
+    </RelativeLayout>
+    <!-- 图像图表 -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/ai_linechart"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+    android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6"
+       />
+</LinearLayout>
+

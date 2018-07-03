@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rjzd.aistock.ui.activity.MainActivity"
+    android:background="@color/cl_background_new">
+
+    <!-- 顶部导航 -->
+   <include
+       android:id="@+id/toolbar"
+       layout="@layout/layout_toolbar_navigation"
+        />
+
+    <!--底部导航Tab-->
+    <LinearLayout
+        android:id="@+id/llTabPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cl_e6e6e6"></View>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <!-- 我的自选 -->
+        <com.rjzd.aistock.ui.views.TabIconView
+            android:id="@+id/tab_zixuan"
+            style="@style/TabPanelStyle.NoPressEffect.Zixuan"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_navigation_bottom"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|center_horizontal"
+            />
+
+        <!-- AI -->
+        <com.rjzd.aistock.ui.views.TabIconView
+            android:id="@+id/tab_ai"
+            style="@style/TabPanelStyle.NoPressEffect.AI"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_navigation_bottom"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|center_horizontal"
+            />
+
+        <!-- 行情 -->
+        <com.rjzd.aistock.ui.views.TabIconView
+            android:id="@+id/tab_markets"
+            style="@style/TabPanelStyle.NoPressEffect.Markets"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_navigation_bottom"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|center_horizontal"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+    <!--中间内容部分-->
+    <LinearLayout
+        android:id="@+id/flFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/llTabPanel"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+
+
+</RelativeLayout>

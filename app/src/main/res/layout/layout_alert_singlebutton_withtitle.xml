@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/public_corners_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        tools:text="小提示"
+        android:background="@drawable/ic_dialog_title_bg"
+        />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:lineSpacingExtra="6dp"
+        android:textSize="14sp"
+        android:textColor="@color/cl_555555"
+        tools:text="您可以点击个股详情页面、AI机器人详情页面左下角的“分享”按钮，分享到朋友圈或分享给朋友。"
+        />
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:lineSpacingExtra="6dp"
+        android:textSize="14sp"
+        android:textColor="@color/cl_unbind"
+        />
+
+    <Button
+        android:id="@+id/btn_got_it"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        tools:text="知道了"
+        android:background="@drawable/btn_unlock_now_shape"
+        />
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#d63535</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="cl_base_text">#f5cf90</color>
+    <color name="colorTitlebar">#000000</color>
+
+    <color name="red">#f74507</color>
+    <color name="transparent">#00000000</color>
+    <color name="common_color333333">#333333</color>
+    <color name="common_color_hintColor">#cccccc</color>
+    <color name="cl_999999">#999999</color>
+    <color name="cl_157efb">#157efb</color>
+
+    <!-- 大盘页面下面的radioBtn的背景色，选中时 -->
+    <drawable name="line_main_checked">#e3f0ff</drawable>
+    <!-- 大盘页面下面的radioBtn的背景色，未选中时 -->
+    <drawable name="line_main_unchecked">#fff</drawable>
+
+
+    <color name="cl_stock_code">#888888</color>
+    <color name="default_color">#373737</color>
+    <color name="marker_bg">#1C232E</color>
+
+    <color name="cl_pie1">#f36e14</color>
+    <color name="cl_pie2">#75ce6c</color>
+
+
+
+    <color name="cl_fall">#00ff00</color>
+    <color name="cl_raise">#ff0000</color>
+    <color name="cl_stop">#ccd0d6</color>
+    <color name="cl_333333">#333333</color>
+    <color name="cl_line">#414141</color>
+    <color name="cl_bottom_navigation_line">#909090</color>
+    <color name="cl_background_base">#000000</color>
+    <color name="cl_background_panel">#202020</color>
+    <color name="c1_666666">#666666</color>
+    <color name="black">#000000</color>
+    <color name="stock_details_textcolor">#de3b19</color>
+    <color name="stock_details_numcolor">#222222</color>
+
+    <color name="cl_252525">#252525</color>
+    <color name="cl_888888">#888888</color>
+    <color name="cl_4a91c9">#4a91c9</color>
+    <color name="cl_131313">#131313</color>
+    <color name="cl_8e8e8e">#8e8e8e</color>
+    <color name="cl_3a3a3a">#3a3a3a</color>
+    <color name="cl_f5f5f5">#f5f5f5</color>
+    <color name="cl_dfdfdf">#dfdfdf</color>
+    <color name="cl_e0e0e0">#e0e0e0</color>
+    <color name="cl_1e1d1b">#1e1d1b</color>
+    <color name="cl_0d74cb">#0d74cb</color>
+
+    <color name="cl_0066ff">#0066ff</color>
+    <color name="cl_e64b4b">#e64b4b</color>
+
+    <color name="chelsea_cucumber">#f09a9a</color>
+
+    <color name="cl_strong">#e64b4b</color>
+    <color name="cl_equal">#f47373</color>
+    <color name="cl_weak">#f09a9a</color>
+    <color name="cl_da3d3d">#da3d3d</color>
+
+
+    <color name="cl_unbind">#e75351</color>
+    <!--第二版颜色-->
+    <color name="cl_d63535">#d63535</color>
+    <color name="cl_119d3e">#119d3e</color>
+    <color name="cl_f2f2f2">#f2f2f2</color>
+    <color name="cl_666666">#666666</color>
+    <color name="cl_dddddd">#dddddd</color>
+    <color name="cl_e6e6e6">#e6e6e6</color>
+    <color name="cl_eeeeee">#eeeeee</color>
+    <color name="cl_1e82d2">#1e82d2</color>
+    <color name="cl_f9f9f9">#f9f9f9</color>
+    <color name="cl_3e5b7d">#3e5b7d</color>
+    <color name="cl_b0b0b0">#b0b0b0</color>
+    <color name="cl_f95555">#f95555</color>
+    <color name="cl_a4a4a4">#a4a4a4</color>
+    <color name="cl_f0f0f0">#f0f0f0</color>
+    <color name="cl_555555">#555555</color>
+    <color name="cl_808080">#808080</color>
+    <color name="cl_222222">#222222</color>
+    <color name="cl_aaaaaa">#aaaaaa</color>
+    <color name="cl_fdf5f5">#fdf5f5</color>
+
+
+    <color name="cl_10174b">#10174b</color>
+    <color name="cl_f1a83a">#f1a83a</color>
+    <color name="cl_0e8ae2">#0e8ae2</color>
+    <color name="cl_d37cd1">#d37cd1</color>
+    <color name="cl_f3c2c2">#f3c2c2</color>
+    <color name="cl_508ff7">#508ff7</color>
+    <color name="cl_background_new">#f0f4fa</color>
+    <color name="cl_ff6532">#ff6532</color>
+    <color name="cl_fea419">#fea419</color>
+    <color name="cl_fea41a">#fea41a</color>
+    <color name="cl_cccccc">#cccccc</color>
+    <color name="cl_f75e46">#f75e46</color>
+    <color name="cl_f0f2f5">#f0f2f5</color>
+    <color name="cl_f8f8f8">#f8f8f8</color>
+    <color name="cl_606060">#606060</color>
+    <color name="cl_717171">#717171</color>
+    <color name="cl_e64225">#e64225</color>
+</resources>

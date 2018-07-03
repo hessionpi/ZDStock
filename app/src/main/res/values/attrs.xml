@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TabIconView的自定义属性-->
+    <declare-styleable name="TabIconView">
+        <attr name="iconLogoSelector" format="reference" />
+        <attr name="iconLogoDefault" format="reference" />
+        <attr name="iconLogoPressed" format="reference" />
+        <attr name="textColorSelector" format="reference" />
+        <attr name="textColorDefault" format="color" />
+        <attr name="textColorPressed" format="color" />
+        <attr name="backgroundSelector" format="reference" />
+        <attr name="backgroundDefault" format="reference" />
+        <attr name="backgroundPressed" format="reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="imageSize" format="dimension" />
+        <attr name="iconPaddingHorizontal" format="dimension" />
+        <attr name="iconPaddingVertical" format="dimension" />
+        <attr name="iconTextMargin" format="dimension" />
+        <attr name="pressEffect" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Toolbar">
+        <!-- 中间标题部分 -->
+        <attr name="titleText" format="string" />
+
+        <!-- 左侧action -->
+        <attr name="actionLeftBackground" format="reference" />
+        <attr name="actionLeftText" format="string" />
+
+        <!-- 右侧action -->
+        <attr name="actionRightText" format="string" />
+        <attr name="actionRightBackground" format="reference" />
+    </declare-styleable>
+
+    <!--tab自定义属性 -->
+    <declare-styleable name="MyTabLayout">
+
+        <!-- indicator   样式 设置显示器颜色  高度 -->
+        <attr name="zq_indicator_color" format="color"/>
+        <attr name="zq_indicator_height" format="dimension"/>
+        <attr name="zq_indicator_width" format="dimension"/>
+
+        <!--外边距-->
+        <attr name="zq_indicator_margin_left" format="dimension"/>
+        <attr name="zq_indicator_margin_top" format="dimension"/>
+        <attr name="zq_indicator_margin_right" format="dimension"/>
+        <attr name="zq_indicator_margin_bottom" format="dimension"/>
+        <attr name="zq_indicator_corner_radius"  format="dimension"/>
+        <!-- 设置显示器支持动画-->
+        <attr name="zq_indicator_anim_enable" format="boolean"/>
+        <!-- 设置显示器动画时间-->
+        <attr name="zq_indicator_anim_duration"  format="integer"/>
+        <!-- 设置显示器支持动画回弹效果-->
+        <attr name="zq_indicator_bounce_enable" format="boolean"/>
+
+        <!-- divider -->
+        <attr name="zq_divider_color" format="color"/>
+        <attr name="zq_divider_width" format="dimension"/>
+        <attr name="zq_divider_padding" format="dimension"/>
+
+        <!-- tabpaddingLeft和paddingRight  设置tab大小等分  设置tab固定大小  -->
+        <attr name="zq_tab_padding"  format="dimension"/>
+        <attr name="zq_tab_space_equal" format="boolean"/>
+        <attr name="zq_tab_width" format="dimension"/>
+
+        <!--字体大小  字体被选中的颜色 -->
+        <attr name="zq_textsize" format="dimension"/>
+        <attr name="zq_textSelectColor" format="color"/>
+        <attr name="zq_textUnselectColor" format="color"/>
+
+        <!-- 设置字体全大写 -->
+        <attr name="zq_textAllCaps" format="boolean"/>
+
+        <!--定义  导航条的背景色  边界颜色  和边界宽度-->
+        <attr name="zq_bar_color" format="color"/>
+        <attr name="zq_bar_stroke_color" format="color"/>
+        <attr name="zq_bar_stroke_width" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MsgView">
+        <!-- 圆角矩形背景色 -->
+        <attr name="mv_backgroundColor" format="color"/>
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_cornerRadius" format="dimension"/>
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_strokeWidth" format="dimension"/>
+        <!-- 圆角边框颜色-->
+        <attr name="mv_strokeColor" format="color"/>
+        <!-- 圆角弧度是高度一半-->
+        <attr name="mv_isRadiusHalfHeight" format="boolean"/>
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="mv_isWidthHeightEqual" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="StickNavLayout">
+        <!--默认是否悬停tab-->
+        <attr name="isStickNav" format="boolean" />
+        <!--距离悬浮的位置-->
+        <attr name="stickOffset" format="dimension" />
+    </declare-styleable>
+
+    <!-- for circle indicator style-->
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+    <!-- circle indicator end -->
+
+    <declare-styleable name="MoreTextStyle">
+        <attr name="moretextSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="maxLine" format="integer" />
+        <attr name="moretext" format="string" />
+    </declare-styleable>
+
+    <!--  垂直滚动文字  -->
+    <declare-styleable name="VerticalScrollTextView">
+        <attr name="verticalScrollTextColor" format="color"/>
+        <attr name="verticalScrollTextSize" format="dimension"/>
+        <attr name="verticalScrollPeriod" format="integer"/>
+    </declare-styleable>
+
+
+</resources>

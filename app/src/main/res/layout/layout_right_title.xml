@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_252525"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+<LinearLayout
+    android:id="@+id/right_title2"
+    android:layout_width="@dimen/stocklist_right_width"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:visibility="gone">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当日成交额"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(万)"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="9sp" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/right_title3"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5日成交额"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(万)"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_title4"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20日成交额"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(万)"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_title5"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60日成交额"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(万)"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_title6"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120日成交额"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(万)"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_title7"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250日成交额"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="@dimen/font_size_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(万)"
+            android:textColor="@color/cl_8e8e8e"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/right_title9"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="5日涨幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title10"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="20日涨幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title11"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="60日涨幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title12"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="120日涨幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title13"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="250日涨幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/right_title14"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="当日换手率"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title15"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="60日换手率"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title16"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="20日换手率"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title17"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="5日换手率"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title18"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="120日换手率"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title19"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="250日换手率"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title20"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="总市值"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title21"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="涨停天数"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title22"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="跌停天数"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title23"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="流通市值"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title24"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="当日振幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title25"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="5日振幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title26"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="20日振幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title27"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="60日振幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title28"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="120日振幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title29"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="250日振幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title30"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="上市天数"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/right_title1"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+
+        android:gravity="center"
+        android:text="收盘价"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        />
+    <TextView
+        android:id="@+id/right_title8"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+
+        android:gravity="center"
+        android:text="1日涨幅"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+       />
+    <TextView
+        android:id="@+id/right_title31"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="行业"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_title32"
+        android:layout_width="@dimen/stocklist_right_width"
+        android:layout_height="@dimen/stocklist_right_title_height"
+        android:gravity="center"
+        android:text="概念"
+        android:textColor="@color/cl_8e8e8e"
+        android:textSize="@dimen/font_size_12"
+        android:visibility="gone"/>
+</LinearLayout>

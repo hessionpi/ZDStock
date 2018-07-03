@@ -1,0 +1,202 @@
+{
+    "code": 200,
+    "data": [
+        {
+            "id": 1,
+            "industry": "开发区"
+        },
+        {
+            "id": 2,
+            "industry": "家具行业"
+        },
+        {
+            "id": 3,
+            "industry": "煤炭行业"
+        },
+        {
+            "id": 4,
+            "industry": "机械行业"
+        },
+        {
+            "id": 5,
+            "industry": "纺织机械"
+        },
+        {
+            "id": 6,
+            "industry": "医疗器械"
+        },
+        {
+            "id": 7,
+            "industry": "电器行业"
+        },
+        {
+            "id": 8,
+            "industry": "酿酒行业"
+        },
+        {
+            "id": 9,
+            "industry": "汽车制造"
+        },
+        {
+            "id": 10,
+            "industry": "环保行业"
+        },
+        {
+            "id": 11,
+            "industry": "仪器仪表"
+        },
+        {
+            "id": 12,
+            "industry": "化纤行业"
+        },
+        {
+            "id": 13,
+            "industry": "纺织行业"
+        },
+        {
+            "id": 14,
+            "industry": "塑料制品"
+        },
+        {
+            "id": 15,
+            "industry": "电子信息"
+        },
+        {
+            "id": 16,
+            "industry": "造纸行业"
+        },
+        {
+            "id": 17,
+            "industry": "供水供气"
+        },
+        {
+            "id": 18,
+            "industry": "电力行业"
+        },
+        {
+            "id": 19,
+            "industry": "钢铁行业"
+        },
+        {
+            "id": 20,
+            "industry": "电子器件"
+        },
+        {
+            "id": 21,
+            "industry": "食品行业"
+        },
+        {
+            "id": 22,
+            "industry": "综合行业"
+        },
+        {
+            "id": 23,
+            "industry": "交通运输"
+        },
+        {
+            "id": 24,
+            "industry": "酒店旅游"
+        },
+        {
+            "id": 25,
+            "industry": "农林牧渔"
+        },
+        {
+            "id": 26,
+            "industry": "服装鞋类"
+        },
+        {
+            "id": 27,
+            "industry": "发电设备"
+        },
+        {
+            "id": 28,
+            "industry": "公路桥梁"
+        },
+        {
+            "id": 29,
+            "industry": "金融行业"
+        },
+        {
+            "id": 30,
+            "industry": "玻璃行业"
+        },
+        {
+            "id": 31,
+            "industry": "商业百货"
+        },
+        {
+            "id": 32,
+            "industry": "建筑建材"
+        },
+        {
+            "id": 33,
+            "industry": "农药化肥"
+        },
+        {
+            "id": 34,
+            "industry": "石油行业"
+        },
+        {
+            "id": 35,
+            "industry": "家电行业"
+        },
+        {
+            "id": 36,
+            "industry": "物资外贸"
+        },
+        {
+            "id": 37,
+            "industry": "飞机制造"
+        },
+        {
+            "id": 38,
+            "industry": "摩托车"
+        },
+        {
+            "id": 39,
+            "industry": "陶瓷行业"
+        },
+        {
+            "id": 40,
+            "industry": "有色金属"
+        },
+        {
+            "id": 41,
+            "industry": "生物制药"
+        },
+        {
+            "id": 42,
+            "industry": "传媒娱乐"
+        },
+        {
+            "id": 43,
+            "industry": "其它行业"
+        },
+        {
+            "id": 44,
+            "industry": "船舶制造"
+        },
+        {
+            "id": 45,
+            "industry": "房地产"
+        },
+        {
+            "id": 46,
+            "industry": "水泥行业"
+        },
+        {
+            "id": 47,
+            "industry": "次新股"
+        },
+        {
+            "id": 48,
+            "industry": "化工行业"
+        },
+        {
+            "id": 49,
+            "industry": "印刷包装"
+        }
+    ],
+    "msg": "success"
+}

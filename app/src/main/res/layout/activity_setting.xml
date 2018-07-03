@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjzd.aistock.ui.activity.SettingActivity"
+    android:orientation="vertical"
+    android:background="@color/cl_f9f9f9">
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back"
+        app:titleText="设置"
+        >
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+
+    <!--第一版-->
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+    <TextView
+        android:id="@+id/person_share"
+        style="@style/mine_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+
+        android:drawableLeft="@drawable/person_share"
+        android:text="@string/person_share" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+    <TextView
+        android:id="@+id/remind_settings"
+        style="@style/mine_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:drawableLeft="@drawable/remind_settings"
+        android:text="@string/remind_settings" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+
+    <TextView
+        android:id="@+id/tv_account_binding"
+        style="@style/mine_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:drawableLeft="@drawable/ic_account_binding"
+        android:text="@string/account_binding" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+
+    <TextView
+        android:id="@+id/idea_tickling"
+        style="@style/mine_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:drawableLeft="@drawable/idea_tickling"
+        android:text="@string/feedback" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+    <TextView
+        android:id="@+id/scoring"
+        style="@style/mine_item_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:drawableLeft="@drawable/grade"
+        android:text="@string/grade" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+    <LinearLayout
+        android:id="@+id/versions"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+
+            style="@style/base_item_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/versions"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="@string/versions" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="当前版本1.00"
+            android:textColor="@color/cl_888888"
+            android:textSize="@dimen/font_size_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/spread" />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+    <!--  <TextView
+          android:id="@+id/common_question"
+          style="@style/mine_item_style"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/mine_item_height"
+          android:drawableLeft="@drawable/problem"
+          android:text="@string/common_question" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.25dp"
+          android:background="@color/cl_dfdfdf" />
+
+      <TextView
+          android:id="@+id/contact"
+          style="@style/mine_item_style"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/mine_item_height"
+          android:drawableLeft="@drawable/relation"
+          android:text="@string/contact_us" />
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0.25dp"
+          android:background="@color/cl_dfdfdf" />-->
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_shape"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_15" />
+</LinearLayout>

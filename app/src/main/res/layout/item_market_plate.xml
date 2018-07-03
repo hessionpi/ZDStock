@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/selector_item_selected"
+    >
+
+    <TextView
+        android:id="@+id/tv_plate_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/cl_333333"
+        tools:text="银行"
+        />
+
+    <TextView
+        android:id="@+id/tv_plate_range"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/cl_333333"
+        tools:text="1.25%"
+        />
+
+    <TextView
+        android:id="@+id/tv_plate_top1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/cl_333333"
+        tools:text="建设银行"
+        />
+
+</LinearLayout>

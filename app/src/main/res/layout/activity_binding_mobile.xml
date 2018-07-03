@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f5f5f5"
+    android:orientation="vertical"
+    >
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionLeftBackground="@drawable/image_back"
+        app:titleText = "@string/binding_mobile"
+        >
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        >
+
+        <com.rjzd.aistock.ui.views.ClearEditText
+            android:id="@+id/et_mobile"
+            style="@style/base_item_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:textColorHint="@color/cl_999999"
+            android:inputType="number"
+            android:maxLength="11"
+            />
+
+        <View
+            android:id="@+id/divider_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/et_mobile"
+            android:background="@color/cl_e0e0e0"
+            >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mine_item_height"
+            android:layout_below="@id/divider_mobile"
+            >
+
+            <EditText
+                android:id="@+id/et_send_code"
+                style="@style/base_item_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/cl_999999"
+                android:inputType="number"
+                android:background="@null"
+                android:hint="@string/code"
+                />
+
+            <Button
+                android:id="@+id/btn_send_code"
+                android:layout_width="70dp"
+                android:layout_height="24dp"
+                android:background="@drawable/login_code"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/send_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_10" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_shape"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_15" />
+</LinearLayout>

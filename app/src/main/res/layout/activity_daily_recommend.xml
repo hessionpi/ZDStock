@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background_new"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.rjzd.aistock.ui.activity.DailyBestStockActivity">
+
+    <com.rjzd.aistock.ui.views.ToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        app:actionLeftBackground="@drawable/image_back"
+        app:titleText="@string/daily_best_plate">
+
+    </com.rjzd.aistock.ui.views.ToolbarView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="@string/recommend_data_update_tips"
+        android:textColor="@color/cl_888888"
+        android:textSize="@dimen/font_size_10"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7.5dp">
+
+        <com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView
+            android:id="@+id/refrsh_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.rjzd.aistock.ui.views.pull2refresh.PullToRefreshView>
+
+        <!-- unlock view -->
+        <FrameLayout
+            android:id="@+id/unlock_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="185dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/unlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@drawable/ic_unlock_function"
+                    tools:text="您可以解锁该高级功能。"
+                    android:textColor="@color/cl_717171"
+                    android:textSize="@dimen/font_size_13" />
+
+                <Button
+                    android:id="@+id/btn_unlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14"
+                    tools:text="立即解锁"
+                    android:background="@drawable/login_shape"
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+</LinearLayout>

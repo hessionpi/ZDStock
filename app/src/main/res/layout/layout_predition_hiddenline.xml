@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/cl_333333"
+        tools:text="基本面预测"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_price_history"
+            android:text="历史股价"
+            android:textSize="@dimen/font_size_11"
+            android:textColor="@color/cl_e64225"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_price_predict"
+            android:drawablePadding="5dp"
+            android:text="预测股价"
+            android:textColor="@color/cl_0d74cb"
+            android:textSize="@dimen/font_size_11" />
+    </LinearLayout>
+
+    <!-- 预测 -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/hiddenline"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_trend_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/font_size_12"
+        android:textColor="@color/cl_555555"
+        />
+
+    <!-- 关于4.0以上设备虚线会变实线的问题，xml中可以添加android:layerType="software",并且height一定要大于shape中width-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:layerType="software"
+        android:background="@drawable/shape_dash_line"
+        />
+</LinearLayout>

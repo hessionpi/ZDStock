@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI综合预测结果："
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_12" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2016-12-12"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="涨跌幅"
+                android:textColor="@color/cl_333333"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:gravity="bottom"
+                android:textColor="@color/cl_d63535"
+                android:textSize="@dimen/font_size_18"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_predition_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.34"
+                android:textColor="@color/cl_d63535"
+                android:textSize="@dimen/font_size_45"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="%"
+                android:gravity="bottom"
+                android:textColor="@color/cl_d63535"
+                android:textSize="@dimen/font_size_18"
+                android:layout_marginBottom="5dp"/>
+            <ImageView
+                android:id="@+id/iv_pre_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/pre_raise"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预测结果"
+                    android:textColor="@color/cl_555555"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_shape"
+                    android:padding="3dp"
+                    android:text="计算中..."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/cl_d63535" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="股票当前价"
+                    android:textColor="@color/cl_555555"
+                    android:textSize="@dimen/font_size_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_shape"
+                    android:padding="3dp"
+                    android:text="等待开盘..."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="所有预测结果为AI机器人客观根据数据得出，不构成投资建议"
+        android:textColor="@color/cl_d63535"
+        android:textSize="@dimen/font_size_9" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_e6e6e6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="0.5dp"
+            android:background="@color/cl_d63535" />
+
+        <TextView
+            android:id="@+id/stock_name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:text="贵州茅台AI综合评分"
+            android:textColor="@color/cl_d63535"
+            android:textSize="@dimen/font_size_13" />
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="0.5dp"
+            android:background="@color/cl_d63535" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_left"
+            android:gravity="center_horizontal"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+   <!-- <View
+        android:layout_width="300dp"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_synthesize" />-->
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="4dp"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="60dp"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_synthesize_green" />    <View
+        android:layout_width="60dp"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_synthesize_blueness" />    <View
+        android:layout_width="60dp"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_synthesize_blue" />    <View
+        android:layout_width="60dp"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_synthesize_yellow" />    <View
+        android:layout_width="60dp"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_synthesize_red" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="较差"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="中等"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="良好"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="优秀"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="极好"
+            android:textColor="@color/cl_999999"
+            android:textSize="@dimen/font_size_10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/predictionkps_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="打败了83%的股票，趋势较为明朗，短期内看涨。"
+        android:textColor="@color/cl_d63535"
+        android:textSize="@dimen/font_size_10" />
+
+  <!--  <TextView
+        android:id="@+id/analysis_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="分析时间：2017-05-06 16:00"
+        android:textColor="@color/cl_888888"
+        android:textSize="@dimen/font_size_10" />-->
+</LinearLayout>

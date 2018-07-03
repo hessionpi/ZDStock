@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <!-- 每日金股-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="13dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/iv_best_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_best_stock"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_toRightOf="@id/iv_best_stock"
+                android:layout_toLeftOf="@+id/tv_unlock_stock"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="@dimen/font_size_15"
+                        android:text="@string/daily_best_stock"
+                        />
+
+                    <TextView
+                        android:id="@+id/cost_best_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableLeft="@drawable/ic_points_best_stock"
+                        android:drawablePadding="3dp"
+                        android:textColor="@color/cl_fea41a"
+                        android:textSize="@dimen/font_size_12"
+                        tools:text="300"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="@dimen/font_size_12"
+                    android:textColor="@color/cl_999999"
+                    android:text="@string/comment_daily_best_stock"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unlock_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/unlock"
+                android:textSize="@dimen/font_size_12"
+                android:textColor="@color/white"
+                android:background="@drawable/points_lock_shape"
+                />
+        </RelativeLayout>
+
+        <!-- 每日牛版-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:paddingTop="13dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="13dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/iv_best_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_best_plate"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_toRightOf="@id/iv_best_plate"
+                android:layout_toLeftOf="@+id/tv_unlock_plate"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="@dimen/font_size_15"
+                        android:text="@string/daily_best_plate"
+                        />
+
+                    <TextView
+                        android:id="@+id/cost_best_plate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/ic_points_best_stock"
+                        android:drawablePadding="3dp"
+                        android:textColor="@color/cl_fea41a"
+                        android:textSize="@dimen/font_size_12"
+                        tools:text="300"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="@dimen/font_size_12"
+                    android:textColor="@color/cl_999999"
+                    android:text="@string/comment_daily_best_plate"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unlock_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/unlock"
+                android:textSize="@dimen/font_size_12"
+                android:textColor="@color/white"
+                android:background="@drawable/points_lock_shape"
+                />
+        </RelativeLayout>
+
+        <!-- VIP会员-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:paddingTop="13dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="13dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/iv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_vip"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="21dp"
+                android:layout_toRightOf="@id/iv_vip"
+                android:layout_toLeftOf="@+id/tv_unlock_vip"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="@dimen/font_size_15"
+                        android:text="@string/vip"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableStart="@drawable/ic_vip_invite"
+                        android:drawablePadding="3dp"
+                        android:textColor="@color/cl_fea41a"
+                        android:textSize="@dimen/font_size_12"
+                        android:text="邀请3个好友注册壹眼富"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="@dimen/font_size_12"
+                    android:textColor="@color/cl_999999"
+                    android:text="@string/comment_vip"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unlock_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="立即邀请"
+                android:textSize="@dimen/font_size_12"
+                android:textColor="@color/white"
+                android:background="@drawable/points_lock_shape"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/cl_999999"
+            android:text="@string/expect_more_vip_privilege"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+</ScrollView>
